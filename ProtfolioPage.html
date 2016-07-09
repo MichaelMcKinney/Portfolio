@@ -10,18 +10,31 @@ Enjoy! -->
   
   	
 	<style type="text/css">
+	
+/* 	large element styling */
 		html, body {
 			margin: 0px;
 			padding: 0px;
 		} 
-	
+		
+/* 	Top Section Styling */
+		
+		
+		
+		
+		
+		
+		
+/* Nav Bar Styling */
 		#navBar {
-			height: 100px;
+			height: 35px;
 			width; 100%;
 			background-color:#ffff99;
 			margin: 0px;
 			padding: 0px;
 		}
+		
+/* 	About Section Styling */
 	
 		#AboutSection{
 			background-color:#ff9966;
@@ -29,6 +42,8 @@ Enjoy! -->
 			width:100%;
 			float:left;
 		}
+		
+/* 	Project Section Styling */
 		
 		#ProjectsSection{
 			background-color:#99ccff;
@@ -38,6 +53,9 @@ Enjoy! -->
 
 		}
 		
+		
+/* 	Contact Section Styling  */
+
 		#ContactSection{
 			background-color:#99ff99;
 			vertical-align: top;
@@ -45,6 +63,14 @@ Enjoy! -->
 			float:left;
 		}
 
+/* Footer Styling */
+
+		#footerSection{
+			height: 40px
+			float:left;
+			background-color:#A3754C
+		}
+	
 	
 			
 	</style>
@@ -71,7 +97,6 @@ Enjoy! -->
 	
 	<!-- ENABLES LOCKED NAVIGATION BAR 
 	SOURCE: http://www.dwuser.com/education/content/creating-a-floating-navigation-menu/ -->
-
 	<script type='text/javascript'>
 		$(function() {
 			// Stick the #nav to the top of the window
@@ -101,13 +126,8 @@ Enjoy! -->
 		});
 	</script>
 
-	
-
 	<!-- This is the text titling the tab -->
 	<title>Michael McKinney</title>
-	
-
-	
 	
 </head>
 <body>
@@ -118,30 +138,22 @@ Enjoy! -->
 <!-- 	inline section -->
 <!-- 		profile image -->
 <!-- 		name text and button section -->
-	<span id="profileImage">
 	
-	</span>
+		<span id="profileImage">
+			<img src="profileImage.png" alt="Michael McKinney's Face" height="150" width="150">
+		</span>
+		<span> 
+			<h1>Michael S. McKinney</h1><br>
+			<h3>Mmckinney277@gmail.com</h3>
+		</span>
 
 
 
 	<div id ="navBar">
-		<span>
-			<ul>
-				<li><a href="#Projects" >Projects</a> </li>
-			</ul>
-		</span>
-		<span>
-			<ul>
-				<li><a href="#About" >About</a> </li>
-			</ul>
-		</span>
-		<span>
-			<ul>
-				<li><a href="#Contact">Contact</a> </li>
-			</ul>
-		</span>
+		<span id="projectsLink"><a href="#Projects" >Projects</a> </span>
+		<span id="AboutLink"><a href="#About" >About</a></span>
+		<span id="ContactLink"><a href="#Contact">Contact</a></span>
 	</div>
-	
 	
 	
 	
@@ -238,7 +250,16 @@ Enjoy! -->
  	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
  	</p>
 </div>
-</body>
 
+<div id="footerSection">
+	<p id="footerText">
+		Copyright? Nah, I don't have a copyright hahaha.
+	</p>
+
+</div>
+
+
+</body>
+	
 
 </html>
