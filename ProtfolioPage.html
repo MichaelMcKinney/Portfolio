@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Hello, and welcome to my website. 
+I made this site from scratch to learn html, css, and anything else I stumbled across. 
+Feel free to look through my code. Take your shoes off, kick back and stay a while. 
+
+Enjoy! -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <style type="text/css">
+
+  </style>
+
+
+<!-- Magic code that enables smooth scrolling between sections 
+SOURCE: https://codeplanet.io/how-to-make-a-single-page-website/-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html, body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
+	</script>
+  
+<!-- This is the text titling the tab -->
+	<title>Michael McKinney</title>
+	<div id = "nav">
+		<ul>
+			<li><a href="#Projects" >Projects</a> </li>
+			<li><a href="#About" >About</a> </li>
+			<li><a href="#Contact">Contact</a> </li>
+		</ul>
+	</div>
+</head>
+<body>
+
+
+<div>
+<!-- This is a Section -->
+	<a id="Projects"></a>
+<!-- 	content goes here -->
+	<h2>Project</h2>
+	<p>Hello this is the projects.</p>
+	
+</div>
+<br>
+
+<div>
+<!-- This is a Section -->
+	<a id="About"></a>
+<!-- 	content goes here -->
+	<h2>About</h2>
+	<p>Hello this is the projects.</p>
+	
+</div>
+<br>
+
+
+<br>fdsfsd<br><br>w<br><br><br><br><br>ds<br><br><br><br><br><br><br>w<br><br><br><br><br><br>32<br><br><br>er<br><br><br><br><br>w<br><br><br>a<br>r<br>xv<br>5<br><br><br><br>er<br><br><br><br>tr<br><br>vc<br><br><br><br><br><br>gfd<br><br><br><br><br><br>gs<br><br><br><br><br>trew<br><br><br><br>ds<br><br>
+
+<div>
+<!-- This is a Section -->
+	<a id="Contact"></a>
+<!-- 	content goes here -->
+	<h2>Contact</h2>
+	<p>Hello this is the Contact.</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+
+</html>
