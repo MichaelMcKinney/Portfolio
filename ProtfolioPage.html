@@ -8,13 +8,37 @@ Enjoy! -->
 <head>
   <meta charset="utf-8">
   
-  <style type="text/css">
+  	
+	<style type="text/css">
+	
+		#navBar {
+			height: 100px;
+			width; 100%;
+			background-color:#ffff99;
+		}
+	
+		#AboutSection{
+			background-color:#ff9966;
+			vertical-align: top;
 
-  </style>
+		}
+		
+		#ProjectsSection{
+			background-color:#99ccff;
+			vertical-align: top;
 
-
-<!-- Magic code that enables smooth scrolling between sections 
-SOURCE: https://codeplanet.io/how-to-make-a-single-page-website/-->
+		}
+		
+		#ContactSection{
+			background-color:#99ff99;
+			vertical-align: top;
+		}
+	
+			
+	</style>
+  
+  <!-- ENABLES SMOOTH SCROLLING 
+	SOURCE: https://codeplanet.io/how-to-make-a-single-page-website/-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 		$(function() {
@@ -32,53 +56,148 @@ SOURCE: https://codeplanet.io/how-to-make-a-single-page-website/-->
 		  });
 		});
 	</script>
-  
-<!-- This is the text titling the tab -->
+	
+	<!-- ENABLES LOCKED NAVIGATION BAR 
+	SOURCE: http://www.dwuser.com/education/content/creating-a-floating-navigation-menu/ -->
+
+	<script type='text/javascript'>
+		$(function() {
+			// Stick the #nav to the top of the window
+			var nav = $('#navBar');
+			var navHomeY = nav.offset().top;
+			var isFixed = false;
+			var $w = $(window);
+			$w.scroll(function() {
+				var scrollTop = $w.scrollTop();
+				var shouldBeFixed = scrollTop > navHomeY;
+				if (shouldBeFixed && !isFixed) {
+					nav.css({
+						position: 'fixed',
+						top: 0,
+						left: nav.offset().left,
+						width: nav.width()
+					});
+					isFixed = true;
+				}
+				else if (!shouldBeFixed && isFixed){
+					nav.css({
+						position: 'static'
+					});
+				isFixed = false;
+				}
+			});
+		});
+	</script>
+
+	
+
+	<!-- This is the text titling the tab -->
 	<title>Michael McKinney</title>
-	<div id = "nav">
-		<ul>
-			<li><a href="#Projects" >Projects</a> </li>
-			<li><a href="#About" >About</a> </li>
-			<li><a href="#Contact">Contact</a> </li>
-		</ul>
-	</div>
+	
+
+	
+	
 </head>
 <body>
 
-
-<div>
+<!-- This is the Top Navigation Bar -->
+<div id ="navBar">
+	<ul>
+		<li><a href="#Projects" >Projects</a> </li>
+		<li><a href="#About" >About</a> </li>
+		<li><a href="#Contact">Contact</a> </li>
+	</ul>
+</div>
+<div id="ProjectsSection">
 <!-- This is a Section -->
 	<a id="Projects"></a>
 <!-- 	content goes here -->
 	<h2>Project</h2>
-	<p>Hello this is the projects.</p>
+	<p>
+	Hello this is the projects.<br>
+	
+	Lorem ipsum dolor sit amet, et eos agam augue sanctus, liber mediocritatem mei ad. 
+	Vix at oblique labitur inciderint, per ad possim denique eligendi. 
+	Iisque pertinacia sadipscing per ne. Exerci graeco alterum sed at.<br>
+
+	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+	
+	
+	</p>
 	
 </div>
-<br>
-
-<div>
+<div id="AboutSection">
 <!-- This is a Section -->
 	<a id="About"></a>
 <!-- 	content goes here -->
 	<h2>About</h2>
-	<p>Hello this is the projects.</p>
+	<p>Hello this is the projects.<br>
+	
+	Lorem ipsum dolor sit amet, et eos agam augue sanctus, liber mediocritatem mei ad. 
+	Vix at oblique labitur inciderint, per ad possim denique eligendi. 
+	Iisque pertinacia sadipscing per ne. Exerci graeco alterum sed at.<br>
+
+	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	</p>
 	
 </div>
-<br>
-
-
-<br>fdsfsd<br><br>w<br><br><br><br><br>ds<br><br><br><br><br><br><br>w<br><br><br><br><br><br>32<br><br><br>er<br><br><br><br><br>w<br><br><br>a<br>r<br>xv<br>5<br><br><br><br>er<br><br><br><br>tr<br><br>vc<br><br><br><br><br><br>gfd<br><br><br><br><br><br>gs<br><br><br><br><br>trew<br><br><br><br>ds<br><br>
-
-<div>
+<div id="ContactSection">
 <!-- This is a Section -->
 	<a id="Contact"></a>
 <!-- 	content goes here -->
 	<h2>Contact</h2>
-	<p>Hello this is the Contact.</p>
+	<p>Hello this is the projects.<br>
+	
+	Lorem ipsum dolor sit amet, et eos agam augue sanctus, liber mediocritatem mei ad. 
+	Vix at oblique labitur inciderint, per ad possim denique eligendi. 
+	Iisque pertinacia sadipscing per ne. Exerci graeco alterum sed at.<br>
+
+	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	
+ 	Ut sea cetero fuisset repudiare, ornatus propriae recteque vis ea.
+ 	Duo ex novum laudem probatus, qui atqui convenire dissentias ad.
+ 	Pri harum prompta ea. No unum nostrud adversarium mei, an pro tritani senserit gloriatur. 
+ 	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
+ 	</p>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
 </body>
 
 
