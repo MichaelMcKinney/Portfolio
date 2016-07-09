@@ -10,29 +10,41 @@ Enjoy! -->
   
   	
 	<style type="text/css">
+		html, body {
+			margin: 0px;
+			padding: 0px;
+		} 
 	
 		#navBar {
 			height: 100px;
 			width; 100%;
 			background-color:#ffff99;
+			margin: 0px;
+			padding: 0px;
 		}
 	
 		#AboutSection{
 			background-color:#ff9966;
 			vertical-align: top;
-
+			width:100%;
+			float:left;
 		}
 		
 		#ProjectsSection{
 			background-color:#99ccff;
 			vertical-align: top;
+			width:100%;
+			float: left;
 
 		}
 		
 		#ContactSection{
 			background-color:#99ff99;
 			vertical-align: top;
+			width:100%;
+			float:left;
 		}
+
 	
 			
 	</style>
@@ -101,13 +113,41 @@ Enjoy! -->
 <body>
 
 <!-- This is the Top Navigation Bar -->
-<div id ="navBar">
-	<ul>
-		<li><a href="#Projects" >Projects</a> </li>
-		<li><a href="#About" >About</a> </li>
-		<li><a href="#Contact">Contact</a> </li>
-	</ul>
-</div>
+<div id="TopSection">
+	
+<!-- 	inline section -->
+<!-- 		profile image -->
+<!-- 		name text and button section -->
+	<span id="profileImage">
+	
+	</span>
+
+
+
+	<div id ="navBar">
+		<span>
+			<ul>
+				<li><a href="#Projects" >Projects</a> </li>
+			</ul>
+		</span>
+		<span>
+			<ul>
+				<li><a href="#About" >About</a> </li>
+			</ul>
+		</span>
+		<span>
+			<ul>
+				<li><a href="#Contact">Contact</a> </li>
+			</ul>
+		</span>
+	</div>
+	
+	
+	
+	
+</div>	
+	
+	
 <div id="ProjectsSection">
 <!-- This is a Section -->
 	<a id="Projects"></a>
