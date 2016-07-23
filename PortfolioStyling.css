@@ -1,0 +1,128 @@
+/* 	large element styling */
+		@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+		html, body {
+			font-family: 'Droid Sans', sans-serif;
+			background-color:#F2EEE9;
+			margin: 0px;
+			padding: 0px;
+		} 
+		
+		.circleImageWithBorder {
+		
+			border-radius:50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			border: 5px solid #5E5E5E;
+			display:inline-block;
+		}	
+		
+/* 	Top Section Styling */
+		
+		#TopSection {
+			margin:15px;
+			padding: 15px;
+
+		}
+		
+		#profileImage {
+			display: inline-block;
+/*   			border: 4px solid #5E5E5E;  */
+			
+		}
+		
+		#profileText {
+			vertical-align: top;
+			display: inline-block;
+			padding-left: 30px;
+		}
+		
+		#nameLabel{
+			font-size:400%;
+			background-color: #ffffff
+			line-height:0.5em;
+		}
+		
+		#emailLabel{
+			font-size:300%
+			line-height:0.5em;
+
+		}
+		
+		#iconBar{
+			vertical-align: bottom;
+		}
+		.iconLink{
+			padding-left:7.5px;
+			padding-right:7.5px;
+		}
+		
+		
+		
+/* Nav Bar Styling */
+		#navBar {
+			height: 35px;
+			width; 100%;
+			background-color:#44352A;
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		#projectsLink{
+			color:#F2EEE9;
+		}
+		
+		#aboutLink{
+			color:#F2EEE9;
+		}
+		
+		#contactLink{
+			color:#F2EEE9;
+		}
+		
+		
+/* 	About Section Styling */
+	
+		#AboutSection{
+			background-color:#AFC8E2;
+			vertical-align: top;
+			width:100%;
+			float:left;
+		}
+		
+/* 	Project Section Styling */
+		
+		#ProjectsSection{
+			background-color:#B4CEAB;
+			vertical-align: top;
+			width:100%;
+			float: left;
+
+		}
+		
+		
+/* 	Contact Section Styling  */
+
+		#ContactSection{
+			background-color:#C4AB93;
+			vertical-align: top;
+			width:100%;
+			float:left;
+		}
+
+/* Footer Styling */
+
+		#footerSection{
+			height: 40px
+			float: left;
+
+    			
+/* 			background-color:#A3754C */
+		}
+		
+		#footerText{
+			text-align: center;
+			padding-top:0.5cm;
+		}
+	
+	
+			

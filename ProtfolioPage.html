@@ -8,74 +8,12 @@ Enjoy! -->
 <head>
   <meta charset="utf-8">
   
-  	
+	<!-- Bring in the css from other directory -->
 	<style type="text/css">
-	
-/* 	large element styling */
-		html, body {
-			margin: 0px;
-			padding: 0px;
-		} 
-		
-/* 	Top Section Styling */
-		
-		
-		
-		
-		
-		
-		
-/* Nav Bar Styling */
-		#navBar {
-			height: 35px;
-			width; 100%;
-			background-color:#ffff99;
-			margin: 0px;
-			padding: 0px;
-		}
-		
-/* 	About Section Styling */
-	
-		#AboutSection{
-			background-color:#ff9966;
-			vertical-align: top;
-			width:100%;
-			float:left;
-		}
-		
-/* 	Project Section Styling */
-		
-		#ProjectsSection{
-			background-color:#99ccff;
-			vertical-align: top;
-			width:100%;
-			float: left;
-
-		}
-		
-		
-/* 	Contact Section Styling  */
-
-		#ContactSection{
-			background-color:#99ff99;
-			vertical-align: top;
-			width:100%;
-			float:left;
-		}
-
-/* Footer Styling */
-
-		#footerSection{
-			height: 40px
-			float:left;
-			background-color:#A3754C
-		}
-	
-	
-			
+		@import url("PortfolioStyling.css");
 	</style>
   
-  <!-- ENABLES SMOOTH SCROLLING 
+	<!-- ENABLES SMOOTH SCROLLING 
 	SOURCE: https://codeplanet.io/how-to-make-a-single-page-website/-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
@@ -140,24 +78,34 @@ Enjoy! -->
 <!-- 		name text and button section -->
 	
 		<span id="profileImage">
-			<img src="profileImage.png" alt="Michael McKinney's Face" height="150" width="150">
+			<img class="circleImageWithBorder" src="profileImage.png" alt="Michael McKinney's Face" height="300" width="300">
 		</span>
-		<span> 
-			<h1>Michael S. McKinney</h1><br>
-			<h3>Mmckinney277@gmail.com</h3>
+		<span id="profileText"> 
+			<div class="backgroundBar">
+				<h1 id="nameLabel">Michael S. McKinney</h1>
+			</div>
+			<h1 id="emailLabel">mmckinney277@gmail.com</h1>
+			<div id="iconBar">
+				<!-- ICON SOURCE https://www.iconfinder.com/phdieuli -->
+				<span class="iconLink" ><a href="mailto:mmckinney277@gmail.com"><img id="linkToEmail" src="mail.png" alt="Email" height="50" width = "50"></a></span>
+				<span class="iconLink"><a href="https://www.linkedin.com/in/michael-mckinney-59935345"><img id="linkedIn" src="linkedin.png" alt="LinkedIn" height="50" width = "50"></a></span>
+				<span class="iconLink"><a href="https://twitter.com/MichaelSteezin"><img id="twitter" src="twitter.png" alt="Email" height="50" width = "50"></a></span>
+				<span class="iconLink"><a href="http://stackoverflow.com/users/3068459/uncaughtexception"><img id="stackOverflow" src="stackoverflow.png" alt="Email" height="50" width = "50"></a></span>
+				<span class="iconLink"><a href="https://github.com/MichaelMcKinney"><img id="github" src="github.png" alt="Email" height="50" width = "50"></a></span>
+			</div>
+	
 		</span>
-
-
-
-	<div id ="navBar">
-		<span id="projectsLink"><a href="#Projects" >Projects</a> </span>
-		<span id="AboutLink"><a href="#About" >About</a></span>
-		<span id="ContactLink"><a href="#Contact">Contact</a></span>
-	</div>
-	
-	
+		
+		
 	
 </div>	
+
+<div id ="navBar">
+	<span"><a  id="projectsLink" href="#Projects" >Projects</a> </span>
+	<span><a  id="aboutLink" href="#About" >About</a></span>
+	<span><a  id="contactLink" href="#Contact">Contact</a></span>
+</div>
+	
 	
 	
 <div id="ProjectsSection">
@@ -166,7 +114,7 @@ Enjoy! -->
 <!-- 	content goes here -->
 	<h2>Project</h2>
 	<p>
-	Hello this is the projects.<br>
+	<b>Hello this is the projects.</b> <br>
 	
 	Lorem ipsum dolor sit amet, et eos agam augue sanctus, liber mediocritatem mei ad. 
 	Vix at oblique labitur inciderint, per ad possim denique eligendi. 
@@ -250,8 +198,9 @@ Enjoy! -->
  	Placerat eloquentiam comprehensam qui id, eu sit delectus recusabo, eam fierent contentiones cu.<br>
  	</p>
 </div>
-
+<br>
 <div id="footerSection">
+<br>
 	<p id="footerText">
 		Copyright? Nah, I don't have a copyright hahaha.
 	</p>
