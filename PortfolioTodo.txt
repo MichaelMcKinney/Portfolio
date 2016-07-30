@@ -1,5 +1,8 @@
 TODO:
 
+Bootstrap?
+
+
 Top Section
 - add colored bars behind the picture, name and email label
 - lock image links to the bottom of the profile picture
